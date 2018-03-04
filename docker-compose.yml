@@ -1,6 +1,6 @@
 version: '3'
 services:
   chat:
-    build: .
+    image: socket:latest
     ports:
      - "80:8000"

@@ -13,5 +13,5 @@ build-static:
 
 run-static:
 	make build-static
-	docker build -t $(name) -f Dockerfile .
+	docker build -t $(name) -f Dockerfile . --no-cache
 	docker-compose up
